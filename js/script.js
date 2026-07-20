@@ -40,7 +40,7 @@
                     // "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=1200"
                 ],
                 // github: "https://github.com/mrizqihr/portfolio-2026",
-                live: "https://portfolio.rizqih.demo"
+                live: "https://myqi-portofolio.vercel.app/"
             },
                         {
                 title: "Prediksi Error & Manhattan Distance Calculator",
