@@ -61,8 +61,8 @@
                     "img/frontend/fronkal2.png",
 
                 ],
-                github: "https://myqii.github.io/kalkulus/",
-                live: "https://myqii.github.io/kalkulus/"
+                github: "https://kalkulus-topaz.vercel.app/",
+                live: "https://kalkulus-topaz.vercel.app/"
             },
             {
                 title: "MOCKUP FASHION",
