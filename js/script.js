@@ -246,7 +246,7 @@
                 tags: ["Canva"],
                 thumbnail: "img/desain/bnrk.jpeg",
                 images: [
-                    "img/desain/bnrk    .jpeg"
+                    "img/desain/bnrk.jpeg"
                 ],
                 github: "#",
                 live: "#"
