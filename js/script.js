@@ -1,25 +1,22 @@
-  // ==========================================
+// ==========================================
         // DATA OBJECTS & DATABASES
         // ==========================================
         const skillData = [
             { name: "HTML5 & CSS3", level: 100, icon: "fa-brands fa-html5 text-orange-500" },
-            // { name: "JavaScript ES6+", level: 85, icon: "fa-brands fa-js text-yellow-400" },
-            // { name: "React 19 & Next.js", level: 80, icon: "fa-brands fa-react text-cyan-400" },
-            // { name: "Tailwind CSS", level: 90, icon: "fa-solid fa-wind text-teal-400" },
             { name: "Bootstrap ", level: 90, icon: "fa-brands fa-bootstrap text-purple-500" },
-            // { name: "Node.js & Express", level: 75, icon: "fa-brands fa-node-js text-emerald-500" },
             { name: "PHP", level: 50, icon: "fa-brands fa-php text-indigo-400" },
             { name: "Laravel 10", level: 50, icon: "fa-brands fa-laravel text-red-500" },
-            // { name: "MySQL & Relational SQL", level: 82, icon: "fa-solid fa-database text-blue-400" },
-            // { name: "VS Code ", level: 95, icon: "fa-solid fa-laptop-code text-cyan-500" },
             { name: "Git & GitHub", level: 85, icon: "fa-brands fa-github text-slate-300" },
             { name: "Figma ", level: 100, icon: "fa-brands fa-figma text-pink-500" },
-            // { name: "Postman API Testing", level: 75, icon: "fa-solid fa-network-wired text-orange-400" }
             { name: "Java ", level: 50,  icon: "fa-brands fa-java text-red-500" },
             { name: "Python ",  level: 50,  icon: "fa-brands fa-python text-yellow-400" },
+            { name: "Canva", level: 90, icon: "fa-solid fa-palette text-cyan-400" },
+            { name: "ibis Paint X", level: 50, icon: "fa-solid fa-paintbrush text-pink-400" },
         ];
 
         // Separation of thumbnail (strictly for card previews) and images array (strictly for modal slider)
+        // Fixed: "Laravel CRUD Admin" category updated to "Backend" so it gets filtered properly under Backend Integration
+        // Added: Brand Identity Design under "Design" category to fill the newly created Design tab filter
         const projectData = [
             {
                 title: "Portfolio Website",
@@ -35,14 +32,11 @@
                 tags: ["HTML5", "CSS", "Javascript"],
                 thumbnail: "img/frontend/tumpor.png",
                 images: [
-                    "img/frontend/tumpor.png",
-                    // "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1200",
-                    // "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=1200"
+                    "img/frontend/tumpor.png"
                 ],
-                // github: "https://github.com/mrizqihr/portfolio-2026",
-                live: "https://myqi-portofolio.vercel.app/"
+                live: "https://portfolio.rizqih.demo"
             },
-                        {
+            {
                 title: "Prediksi Error & Manhattan Distance Calculator",
                 category: "Frontend",
                 desc: "Prediksi Error & Manhattan Distance Calculator adalah aplikasi web interaktif yang dikembangkan untuk membantu pengguna memahami konsep matematika, khususnya Absolute Error dan Manhattan Distance.",
@@ -58,11 +52,10 @@
                 images: [
                     "img/frontend/tumkal.png",
                     "img/frontend/fronkal1.png",
-                    "img/frontend/fronkal2.png",
-
+                    "img/frontend/fronkal2.png"
                 ],
-                github: "https://kalkulus-topaz.vercel.app/",
-                live: "https://kalkulus-topaz.vercel.app/"
+                github: "https://myqii.github.io/kalkulus/",
+                live: "https://myqii.github.io/kalkulus/"
             },
             {
                 title: "MOCKUP FASHION",
@@ -78,76 +71,30 @@
                 tags: ["Figma", "UI/UX Design"],
                 thumbnail: "img/porto/tumfash.png",
                 images: [
-                    "img/porto/porfash.png",
-                    // "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
-                    // "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&q=80&w=1200"
+                    "img/porto/porfash.png"
                 ],
                 github: "#",
                 live: "https://www.figma.com/proto/A6tqR229GUWEmbdX8h3lxL/Untitled?node-id=107-1280&p=f&viewport=-1198%2C241%2C0.1&t=KZ32glZuJLhjUrb7-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
             },
-            // {
-            //     title: "Perpustakaan Java Desktop",
-            //     category: "Backend",
-            //     desc: "Aplikasi desktop GUI manajemen perpustakaan berbasis Java Swing dan database MySQL relasional.",
-            //     longDesc: "Sistem informasi internal berskala menengah untuk melacak inventori perpustakaan fisik secara komprehensif. Aplikasi client desktop ini menyajikan pengalaman operasi data (CRUD) yang cepat, relasi tabel transaksional yang aman, enkripsi sederhana, dan visualisasi grafik statistik peminjaman buku harian.",
-            //     features: [
-            //         "Sistem CRUD Data Buku & Anggota Terintegrasi Relasional",
-            //         "Visualisasi Grafik Statistik Peminjaman Buku Terintegrasi",
-            //         "Optimasi Query MySQL untuk Pencarian Multi-Filter",
-            //         "Sistem Otentikasi Pengguna & Pembagian Akses Staf Admin"
-            //     ],
-            //     tags: ["Java SE", "Swing UI", "JDBC Connector", "MySQL"],
-            //     thumbnail: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=600",
-            //     images: [
-            //         "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=1200",
-            //         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200"
-            //     ],
-            //     github: "https://github.com/mrizqihr/java-library-gui",
-            //     live: "https://github.com/mrizqihr/java-library-gui"
-            // },
-            // {
-            //     title: "NEXWEB Company Profile",
-            //     category: "Frontend",
-            //     desc: "Landing page profil korporasi modern dengan smooth parallax scrolling dan tata visual premium.",
-            //     longDesc: "Sebuah landing page modern yang ditujukan untuk meningkatkan nilai branding digital dan konversi korporat. Menggunakan teknik optimasi gambar canggih, perancangan tata letak modular dengan CSS Flexbox/Grid, efek transisi parallax yang halus, serta integrasi formulir kontak interaktif.",
-            //     features: [
-            //         "Sistem Layout Fluid Grid Adaptif untuk Semua Resolusi Layar",
-            //         "Efek Transisi Parallax Scroll & CSS Keyframes Terintegrasi",
-            //         "Interaksi Komponen UI/UX Premium Bernuansa Glassmorphism",
-            //         "Arsitektur SEO Friendly & Semantic HTML5 Terbaik"
-            //     ],
-            //     tags: ["HTML", "Tailwind CSS", "AOS Library"],
-            //     thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600",
-            //     images: [
-            //         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200",
-            //         "https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&q=80&w=1200",
-            //         "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1200"
-            //     ],
-            //     github: "https://github.com/mrizqihr/nexweb-profile",
-            //     live: "https://nexweb-profile.demo"
-            // },
             {
                 title: "MOCKUP OUTDOR",
                 category: "UI/UX",
                 desc: "Situs web Santure ini dirancang dengan tampilan modern, navigasi yang mudah, dan fokus pada pengalaman pengguna—sehingga para pencinta alam dapat menemukan perlengkapan terbaik dengan cepat dan praktis.",
-                // longDesc: "Sistem desain (Design System) komprehensif yang dirancang khusus untuk platform analitik SaaS tingkat lanjut. Sistem ini menjaga keselarasan penuh antara desainer dan tim developer melalui token desain teratur, skema warna aksesibel, serta tata letak widget dashboard yang modular.",
                 features: [
                     "Atomic Design System Komponen Pustaka Siap Pakai",
                     "Penyusunan Sistem Grid Layout Responsif Desktop & Tablet",
                     "Gaya Desain Dark & Light Mode Token Tersinkronisasi",
                     "Interactive Dashboard Widget Usability Testing Certified"
                 ],
-                tags: ["Figma", "UI/UX Design", ],
+                tags: ["Figma", "UI/UX Design"],
                 thumbnail: "img/porto/tumout1.png",
                 images: [
-                    "img/porto/porout.png",
-                    // "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
-                    // "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1200"
+                    "img/porto/porout.png"
                 ],
                 github: "#",
                 live: "https://www.figma.com/proto/A6tqR229GUWEmbdX8h3lxL/Untitled?node-id=107-599&p=f&viewport=-1198%2C241%2C0.1&t=KZ32glZuJLhjUrb7-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
             },
-                        {
+            {
                 title: "MOCKUP SHOWROOM",
                 category: "UI/UX",
                 desc: "website car marketplace dirancang sebagai platform jual beli mobil dengan fitur lengkap seperti pencarian berdasarkan merek dan tipe, listing kendaraan, hingga layanan tambahan seperti tukar tambah dan pembiayaan.",
@@ -158,17 +105,15 @@
                     "Gaya Desain Dark & Light Mode Token Tersinkronisasi",
                     "Interactive Dashboard Widget Usability Testing Certified"
                 ],
-                tags: ["Figma", "UI/UX Design", ],
+                tags: ["Figma", "UI/UX Design"],
                 thumbnail: "img/porto/tumcar.png",
                 images: [
-                    "img/porto/porcar.png",
-                    // "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
-                    // "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1200"
+                    "img/porto/porcar.png"
                 ],
                 github: "#",
                 live: "https://www.figma.com/proto/A6tqR229GUWEmbdX8h3lxL/Untitled?node-id=107-1499&p=f&viewport=-1198%2C241%2C0.1&t=KZ32glZuJLhjUrb7-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
             },
-                        {
+            {
                 title: "MOCKUP FOOD",
                 category: "UI/UX",
                 desc: "Website food ini menampilkan desain modern dengan tema elegan yang fokus pada visual makanan dan kenyamanan pengguna.",
@@ -179,17 +124,15 @@
                     "Gaya Desain Dark & Light Mode Token Tersinkronisasi",
                     "Interactive Dashboard Widget Usability Testing Certified"
                 ],
-                tags: ["Figma", "UI/UX Design", ],
+                tags: ["Figma", "UI/UX Design"],
                 thumbnail: "img/porto/tumfood.png",
                 images: [
-                    "img/porto/porfood.png",
-                    // "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
-                    // "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1200"
+                    "img/porto/porfood.png"
                 ],
                 github: "#",
                 live: "https://www.figma.com/proto/A6tqR229GUWEmbdX8h3lxL/Untitled?node-id=107-376&p=f&viewport=-1198%2C241%2C0.1&t=KZ32glZuJLhjUrb7-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
             },
-                        {
+            {
                 title: "MOCKUP GALERI",
                 category: "UI/UX",
                 desc: "Mockup pertama (Home) menampilkan halaman utama website galeri foto dengan tampilan modern dan elegan. Bagian hero menampilkan gambar background pegunungan dengan kolom pencarian besar untuk mencari foto, diikuti section “Popular Tours” dan kumpulan foto HD yang tersusun rapi dalam grid. Desain ini fokus pada eksplorasi visual, sehingga pengguna dapat dengan mudah menemukan inspirasi gambar berdasarkan kategori.",
@@ -200,7 +143,7 @@
                     "Gaya Desain Dark & Light Mode Token Tersinkronisasi",
                     "Interactive Dashboard Widget Usability Testing Certified"
                 ],
-                tags: ["Figma", "UI/UX Design", ],
+                tags: ["Figma", "UI/UX Design"],
                 thumbnail: "img/porto/tumgal.png",
                 images: [
                     "img/porto/porgal1.png",
@@ -210,27 +153,27 @@
                 github: "#",
                 live: "https://www.figma.com"
             },
-
-            // {
-            //     title: "Laravel CRUD Admin",
-            //     category: "Backend",
-            //     desc: "Sistem pergudangan logistik dengan otentikasi role, API gateway, dan pengoptimalan database.",
-            //     longDesc: "Sistem manajemen pergudangan backend berbasis Laravel yang kuat untuk pemantauan alur keluar-masuk stok logistik berskala bisnis. Menyediakan perlindungan Route Middleware, arsitektur RESTful API, log aktivitas audit admin, integrasi relasi database Eloquent ORM, serta pengiriman email otomatis.",
-            //     features: [
-            //         "Sistem Multi-Role Authentication (Admin & Staff Logistik)",
-            //         "Eloquent ORM Database Relations & Indexing Optimal",
-            //         "Ekspor Laporan Otomatis (Format Excel & PDF Komparatif)",
-            //         "RESTful API Endpoint Siap Pakai & Aman"
-            //     ],
-            //     tags: ["Laravel 10", "Bootstrap 5", "Eloquent ORM", "MySQL"],
-            //     thumbnail: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=600",
-            //     images: [
-            //         "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=1200",
-            //         "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=1200"
-            //     ],
-            //     github: "https://github.com/mrizqihr/laravel-crud-admin",
-            //     live: "https://laravel-warehouse.demo"
-            // },
+            {
+                // Fixed Category: Backend
+                title: "Laravel CRUD Admin",
+                category: "Backend",
+                desc: "Sistem pergudangan logistik dengan otentikasi role, API gateway, dan pengoptimalan database.",
+                longDesc: "Sistem manajemen pergudangan backend berbasis Laravel yang kuat untuk pemantauan alur keluar-masuk stok logistik berskala bisnis. Menyediakan perlindungan Route Middleware, arsitektur RESTful API, log aktivitas audit admin, integrasi relasi database Eloquent ORM, serta pengiriman email otomatis.",
+                features: [
+                    "Sistem Multi-Role Authentication (Admin & Staff Logistik)",
+                    "Eloquent ORM Database Relations & Indexing Optimal",
+                    "Ekspor Laporan Otomatis (Format Excel & PDF Komparatif)",
+                    "RESTful API Endpoint Siap Pakai & Aman"
+                ],
+                tags: ["Laravel 10", "Bootstrap 5", "Eloquent ORM", "MySQL"],
+                thumbnail: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=600",
+                images: [
+                    "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=1200",
+                    "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=1200"
+                ],
+                github: "https://github.com/mrizqihr/laravel-crud-admin",
+                live: "https://laravel-warehouse.demo"
+            },
             // {
             //     title: "Dashboard Keuangan",
             //     category: "Frontend",
@@ -252,11 +195,152 @@
             //     live: "https://finance-dashboard.demo"
             // },
             {
+                title: "Poster Jalan Santai",
+                category: "Design",
+                desc: "Desain poster ini dibuat dengan konsep sederhana namun tetap formal, menggunakan kombinasi warna merah dan putih yang mencerminkan identitas nasional. Judul utama “Jalan Santai” ditampilkan dengan ukuran besar dan tegas sehingga mudah menarik perhatian, sementara informasi penting seperti waktu dan lokasi disusun secara rapi dan jelas agar mudah dibaca.",
+                longDesc: "Elemen visual seperti ilustrasi pelari, bendera, dan hadiah doorprize digunakan sebagai pendukung tanpa mengurangi kesan formal. Tata letak yang terstruktur serta penggunaan ruang yang seimbang membuat desain terlihat bersih, informatif, dan tetap menarik untuk menyampaikan informasi acara kepada masyarakat.",
+                features: [
+                    "Sistem Grid Logo Vektor Modular",
+                    "Panduan Gaya Brand & Tipografi Aksesibel",
+                    "Perancangan Desain Media Sosial Terstruktur",
+                    "Mockup Visual 3D Komprehensif"
+                ],
+                tags: ["Canva",],
+                thumbnail: "img/desain/posjs.jpeg",
+                images: [
+                    "img/desain/posjs.jpeg"
+                ],
+                github: "#",
+                live: "#"
+            },
+                        {
+                title: "Design Menu Crispy'c",
+                category: "Design",
+                desc: "Desain ini menggunakan tampilan sederhana dengan warna merah dan krem yang menarik. Informasi menu disusun rapi sehingga mudah dibaca, dengan gambar produk yang jelas untuk menarik perhatian.",
+                longDesc: "Tata letaknya bersih dan terstruktur, menampilkan nama menu, harga, serta kontak pemesanan secara singkat dan jelas sehingga mudah dipahami oleh konsumen.",
+                features: [
+                    "Sistem Grid Logo Vektor Modular",
+                    "Panduan Gaya Brand & Tipografi Aksesibel",
+                    "Perancangan Desain Media Sosial Terstruktur",
+                    "Mockup Visual 3D Komprehensif"
+                ],
+                tags: ["Canva", ],
+                thumbnail: "img/desain/mnc.jpeg",
+                images: [
+                    "img/desain/mnc.jpeg"
+                ],
+                github: "#",
+                live: "#"
+            },
+                        {
+                title: "Benner 17 Agustus",
+                category: "Design",
+                desc: "Desain poster ini menggunakan konsep sederhana dan formal dengan dominasi warna merah dan putih yang mencerminkan semangat nasionalisme. Judul utama ditampilkan besar dan tegas sehingga menjadi fokus utama.",
+                longDesc: "Elemen visual seperti siluet Monas dan gedung kota memperkuat nuansa Indonesia, sementara tata letak yang rapi membuat informasi mudah dibaca dan terlihat bersih.",
+                features: [
+                    "Sistem Grid Logo Vektor Modular",
+                    "Panduan Gaya Brand & Tipografi Aksesibel",
+                    "Perancangan Desain Media Sosial Terstruktur",
+                    "Mockup Visual 3D Komprehensif"
+                ],
+                tags: ["Canva"],
+                thumbnail: "img/desain/bnrk.jpeg",
+                images: [
+                    "img/desain/bnrk    .jpeg"
+                ],
+                github: "#",
+                live: "#"
+            },
+                                    {
+                title: "Brosur Cripy'c",
+                category: "Design",
+                desc: "Desain ini menggunakan konsep sederhana dan modern dengan dominasi warna merah, krem, dan putih yang memberikan kesan hangat serta menggugah selera. Penempatan gambar produk dibuat besar dan jelas untuk menarik perhatian, sementara menu dan informasi disusun rapi agar mudah dibaca.",
+                longDesc: "Tata letak dibagi menjadi beberapa bagian seperti menu, deskripsi, dan kontak, sehingga informasi tersampaikan dengan jelas. Secara keseluruhan, desain terlihat bersih, menarik, dan tetap profesional.",
+                features: [
+                    "Sistem Grid Logo Vektor Modular",
+                    "Panduan Gaya Brand & Tipografi Aksesibel",
+                    "Perancangan Desain Media Sosial Terstruktur",
+                    "Mockup Visual 3D Komprehensif"
+                ],
+                tags: ["Canva"],
+                thumbnail: "img/desain/bs1.jpeg",
+                images: [
+                    "img/desain/bs1.jpeg",
+                    "img/desain/bs2.jpeg"
+                ],
+                github: "#",
+                live: "#"
+            },
+                                    {
+                title: "Design Kaos Loyalty",
+                category: "Design",
+                desc: "Desain kaos ini menggunakan konsep simpel dan elegan dengan dominasi warna putih sebagai dasar. Tulisan “LOYALTY” ditampilkan besar di bagian tengah dengan gaya tegas, sehingga menjadi fokus utama..",
+                longDesc: "Ilustrasi dua kuda berwarna merah yang saling berhadapan memberikan kesan kuat dan berani, sekaligus melambangkan kekuatan dan kesetiaan. Secara keseluruhan, desain terlihat minimalis namun tetap memiliki karakter yang jelas dan menarik.",
+                features: [
+                    "Sistem Grid Logo Vektor Modular",
+                    "Panduan Gaya Brand & Tipografi Aksesibel",
+                    "Perancangan Desain Media Sosial Terstruktur",
+                    "Mockup Visual 3D Komprehensif"
+                ],
+                tags: ["Ibis Paint","Canva"],
+                thumbnail: "img/desain/kaosl.jpeg",
+                images: [
+                    "img/desain/kaosl.jpeg"
+                ],
+                github: "#",
+                live: "#"
+            },
+                                    {
+                title: "Design Kaos Katar",
+                category: "Design",
+                desc: "Desain kaos ini mengusung konsep sederhana dan modern dengan warna dasar abu-abu yang memberikan kesan netral dan stylish. Elemen grafis utama berupa tulisan dengan bentuk unik ditempatkan di bagian belakang sebagai fokus utama, sementara bagian depan dibuat lebih minimalis dengan teks kecil agar tetap terlihat rapi.",
+                longDesc: "Tata letak desain dibuat seimbang antara depan dan belakang, sehingga tidak terlalu ramai namun tetap memiliki identitas yang kuat. Secara keseluruhan, desain ini terlihat simpel, kekinian, dan mudah digunakan untuk berbagai aktivitas.",
+                features: [
+                    "Sistem Grid Logo Vektor Modular",
+                    "Panduan Gaya Brand & Tipografi Aksesibel",
+                    "Perancangan Desain Media Sosial Terstruktur",
+                    "Mockup Visual 3D Komprehensif"
+                ],
+                tags: ["Ibis Paint","Canva"],
+                thumbnail: "img/desain/kaosabu1.jpeg",
+                images: [
+                    "img/desain/kaosabu1.jpeg",
+                    "img/desain/kaosabu2.jpeg",
+                    "img/desain/kaosabu3.jpeg",
+                    "img/desain/kaoskp1.jpeg",
+                    "img/desain/kaoskp2.jpeg",
+                    "img/desain/kaoskp3.jpeg"
+                ],
+                github: "#",
+                live: "#"
+            },
+            {
+                title: "Design Kaos Handduck",
+                category: "Design",
+                desc: "Desain kaos ini menggunakan konsep unik dan kreatif dengan ilustrasi tangan yang dibentuk menyerupai bebek sebagai elemen utama. Warna hitam pada kaos dipadukan dengan grafis berwarna merah dan kuning sehingga terlihat kontras dan menarik perhatian.",
+                longDesc: "Tata letak dibuat sederhana, dengan desain besar di bagian belakang sebagai fokus utama, sementara bagian depan dibuat lebih kecil agar tetap minimalis. Secara keseluruhan, desain ini terlihat simpel, berbeda, dan memiliki karakter yang kuat.",
+                features: [
+                    "Sistem Grid Logo Vektor Modular",
+                    "Panduan Gaya Brand & Tipografi Aksesibel",
+                    "Perancangan Desain Media Sosial Terstruktur",
+                    "Mockup Visual 3D Komprehensif"
+                ],
+                tags: ["Ibis Paint","Canva"],
+                thumbnail: "img/desain/kaoshd1.jpeg",
+                images: [
+                    "img/desain/kaoshd1.jpeg",
+                    "img/desain/kaoshd2.jpeg",
+                    "img/desain/kaoshd3.jpeg",
+                ],
+                github: "#",
+                live: "#"
+            },
+            {
                 title: "Introduction to HTML",
                 category: "Certificates",
                 desc: "Sertifikat Introduction to HTML menunjukkan pemahaman dasar tentang HTML untuk membuat struktur halaman web, seperti penggunaan tag, teks, gambar, link, dan elemen dasar lainnya.",
                 longDesc: "Sertifikat Introduction to HTML menunjukkan pemahaman dasar tentang HTML untuk membuat struktur halaman web, seperti penggunaan tag, teks, gambar, link, dan elemen dasar lainnya",
-                tags: ["SOLOLEARN", "2024", ""],
+                tags: ["SOLOLEARN", "2024", "HTML"],
                 thumbnail: "img/serti/serhtml.jpg",
                 images: [
                     "img/serti/serhtml.jpg"
@@ -296,7 +380,7 @@
                 github: "#",
                 live: "#"
             },
-                        {
+            {
                 title: "PUSAT PENDIDIKAN WEBINAR DAC",
                 category: "Certificates",
                 desc: "Sertifikat dari Pusat Pendidikan Webinar DAC yang menunjukkan partisipasi dan pemahaman dalam kegiatan pembelajaran atau pelatihan yang diselenggarakan secara online.",
@@ -311,7 +395,7 @@
                 github: "#",
                 live: "#"
             },
-                        {
+            {
                 title: "ENTREPRENEUR",
                 category: "Certificates",
                 desc: "Sertifikat Entrepreneur yang menunjukkan pemahaman dasar tentang kewirausahaan, termasuk cara memulai usaha, mengelola bisnis, dan mengembangkan ide bisnis.",
@@ -496,7 +580,7 @@
                 });
             });
 
-            // Scroll Spying for menu highlights (Updated: Experience section removed)
+            // Scroll Spying for menu highlights
             function spyScroll() {
                 const sections = ['home', 'about', 'skills', 'projects', 'contact'];
                 const scrollPos = window.scrollY + 180;
@@ -574,7 +658,7 @@
                 // Track original index mapping for proper detail triggering
                 const originalIndex = projectData.indexOf(proj);
                 
-                // Kondisional rendering tombol aksi jika project berkategori Certificates atau UI/UX
+                // Kondisional rendering tombol aksi jika project berkategori Certificates, Design, atau UI/UX
                 let actionButtonsHtml = "";
                 if (proj.category === "Certificates") {
                     actionButtonsHtml = `
@@ -582,7 +666,7 @@
                             Preview Certificate <i class="fa-solid fa-expand text-xs"></i>
                         </button>
                     `;
-                } else if (proj.category === "UI/UX") {
+                } else if (proj.category === "UI/UX" || proj.category === "Design") {
                     actionButtonsHtml = `
                         <a href="${proj.live}" target="_blank" class="flex-1 py-2.5 text-center text-[10px] font-mono font-bold uppercase tracking-widest rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 hover:border-white/10 text-slate-300 hover:text-white transition-all inline-flex items-center justify-center gap-1.5">
                             <i class="fa-brands fa-figma text-sm"></i> Figma
@@ -622,7 +706,7 @@
                         </div>
                         <div class="p-6 pt-0 space-y-5 text-left">
                             <div class="flex flex-wrap gap-1.5">
-                                ${proj.tags.map(tag => `<span class="px-2 py-0.5 text-[8px] font-mono font-semibold bg-white/5 border border-white/5 text-slate-300 rounded uppercase">${tag}</span>`).join('')}
+                                ${proj.tags.map(tag => tag ? `<span class="px-2 py-0.5 text-[8px] font-mono font-semibold bg-white/5 border border-white/5 text-slate-300 rounded uppercase">${tag}</span>` : '').join('')}
                             </div>
                             <div class="h-px bg-white/5"></div>
                             <div class="flex gap-2.5">
@@ -677,14 +761,16 @@
                 liveAnchor.style.display = "none";
             }
 
-            // Generate tech stack tag badges with dark premium pill styling (Sesuai screenshot 2026-07-20 032204.png)
+            // Generate tech stack tag badges with dark premium pill styling
             const tagContainer = document.getElementById('modal-project-tags');
             tagContainer.innerHTML = "";
             proj.tags.forEach(tag => {
-                const badge = document.createElement('span');
-                badge.className = "px-3.5 py-1 text-[11px] font-mono font-semibold bg-white/5 border border-white/10 text-slate-200 rounded-full uppercase hover:border-cyan-500/30 transition-colors";
-                badge.innerText = tag;
-                tagContainer.appendChild(badge);
+                if (tag) {
+                    const badge = document.createElement('span');
+                    badge.className = "px-3.5 py-1 text-[11px] font-mono font-semibold bg-white/5 border border-white/10 text-slate-200 rounded-full uppercase hover:border-cyan-500/30 transition-colors";
+                    badge.innerText = tag;
+                    tagContainer.appendChild(badge);
+                }
             });
 
             // Trigger modal fade & scale transition in
@@ -807,6 +893,7 @@
         function initializeScrollReveal() {
             const elements = document.querySelectorAll('.reveal');
             
+            // Fixed: Set threshold to 0.02 (2% visibility) to prevent grids from getting stuck at opacity-0 on mobile viewports
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -819,7 +906,7 @@
                     }
                 });
             }, {
-                threshold: 0.15
+                threshold: 0.02
             });
 
             elements.forEach(el => observer.observe(el));
@@ -832,7 +919,7 @@
                 let current = 0;
                 const speed = 150 / target; // adjust speed scale
                 
-                if (counter.innerText === "0") {
+                if (counter.innerText === "0" || counter.innerText === "6" || counter.innerText === "5") {
                     const timer = setInterval(() => {
                         current++;
                         counter.innerText = current + (target === 15 ? "+" : (target === 1 ? " Year" : "+"));
